@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division de Secciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tramo">
+            <label for="">Longitud tramo (kilometros)</label>
+            <input class="longitud-seccion" type="text" id="longTramo" autocomplete="off">
+            <span class="">Longitud incorrecta</span>
+        </div>
+        <div>
+            <label for="">Número secciones</label>
+            <input class="longitud-seccion" type="text" id="numSecc" autocomplete="off">
+            <span class="">Numero se secciones incorrecto</span>
+        </div>
+        <fieldset id="secciones">
+            <legend>Longitud secciones (kilometros)</legend>
+            <input type="checkbox" id="editarSecc"> Editar longitudes  
+            <div id="containerSecc"></div>
+            <span class="">La suma de longitudes no es igual a la longitud del tramo</span>
+        </fieldset>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
